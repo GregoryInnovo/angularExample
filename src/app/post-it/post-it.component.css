@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #C1CCDA;
+    background-color: #F6FAFD;
+}
+
+.o-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    margin-top: 15vh;
+    justify-content: space-around;
+    height: 100%;
+    /* background-color: black; */
+}
+
+.o-form {
+    width: 50%;
+    position: sticky;
+    top:80px;
+    display:inline-block;
+    height: 480px;
+    /* background-color: red; */
+}
+
+textarea {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2F4251;
+    border: 1px solid transparent;
+    border-bottom: 3px solid #A4B6CD;
+    background-color: transparent;
+}
+
+.o-input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2F4251;
+    border: 1px solid transparent;
+    border-bottom: 3px solid #A4B6CD;
+    background-color: transparent;
+}
+
+.o-formart {
+    align-content: center;
+    border-radius: 200px;
+    font-weight: bold;
+    width: 105px;
+}
+
+.o-style {
+    box-shadow: 0 6px 6px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    height: fit-content;
+    min-width: 240px;
+    margin: 25px 0px 25px 0px;
+}
+
+.o-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.o-text-main {
+    color: #2F4251;
+}
+
+.o-space {
+    margin-top: 50px;
+}
+
+#o-btn-operation {
+    display:flex; 
+    justify-content:center;
+    margin: 20px 30px 20px 30px;
+    font-size: bold;
+}
+
+.o-state {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.o-list {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+}
+
+@media screen and (max-width: 868px) {
+    #o-btn-operation {
+        display:flex; 
+        justify-content:center;
+        margin: 80px 100px 120px 100px;
+    }
+    
+}

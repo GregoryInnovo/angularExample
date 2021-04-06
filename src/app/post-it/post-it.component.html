@@ -1,0 +1,60 @@
+
+
+
+<div class="o-container">
+    <div class="o-form">
+        <h1 class="o-text-main">Post it!</h1>
+
+        <form action="">
+            <h6 class="o-space">Title</h6>
+            <div class="input-group mb-3">
+                <input  #input1 required (keyup)="number1($event.target.value)" id="number1" type="text" maxlength="35" placeholder="Add a title (max 35) ..." class="form-control o-input" aria-label="Dollar amount (with dot and two decimal places)">
+            </div>
+    
+            <h6 class="o-space">Description</h6>
+            <div class="input-group mb-3">
+                <textarea #input2 required (keyup)="textDesc($event.target.value)"  matInput maxlength="150" placeholder="Add a description (max 150)..."></textarea>
+            </div>
+            
+            <div class="o-state">
+                <button (click)="normal()" type="button" class="btn btn-success o-formart">Normal</button>
+                <button (click)="priority()" type="button" class="btn btn-danger o-formart">Priority</button>
+            </div>
+    
+            <div class="mb-3" id="o-btn-operation" >
+                <button (click)="addTask($event, input1, input2)" type="submit"  class="btn btn-primary o-formart">+</button>
+            </div>    
+        </form>
+    
+       
+
+        
+    </div>
+    
+    <div class="o-list">
+
+        <div class="card o-style" [style.background]='colorResult' >
+            <div class="card-body o-card" >
+                <h6 style="font-size:1.6rem">{{titleResult}}</h6>
+                <h1 id="result" class="o-text-main" style="font-size:1rem">{{contentResult}}</h1>
+            </div>
+        </div>
+
+
+
+        <div *ngFor="let tarea of tareas">
+            <div class="card o-style" [style.background]='tarea.colorResult'>
+                <div class="card-body o-card">
+                    <h6 style="font-size:1.6rem">{{tarea.titleResult}}</h6>
+                    <h1 id="result" class="o-text-main" style="font-size:1rem">{{tarea.contentResult}}</h1>
+                </div>
+            </div>
+        </div>
+
+        
+        
+
+    </div>
+    
+
+</div>
