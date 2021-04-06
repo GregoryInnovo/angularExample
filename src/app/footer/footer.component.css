@@ -1,0 +1,7 @@
+.o-footer {
+    background-color: rgb(224, 224, 224);
+    border-radius: 3rem 3rem 0rem 0rem;
+    box-shadow: 10px rgb(0, 0, 0);
+    height: 140px;
+    width: 100%
+}
