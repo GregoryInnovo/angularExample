@@ -8,6 +8,13 @@
         <form action="">
             <h6 class="o-space">Title</h6>
             <div class="input-group mb-3">
+                <!-- 
+                    Enlace de evento: (Event) = "myFunction ($ event)"
+                    Con el enlace de eventos, se pasa un valor de un componente secundario
+                    al componente principal, que a menudo puede ser un atributo html simple.
+                    EX:
+                    <input type = "text" (myEvent) = "onClick ($ event)" />
+                 -->
                 <input  #input1 required (keyup)="number1($event.target.value)" id="number1" type="text" maxlength="35" placeholder="Add a title (max 35) ..." class="form-control o-input" aria-label="Dollar amount (with dot and two decimal places)">
             </div>
     
